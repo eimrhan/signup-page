@@ -79,7 +79,7 @@ button.active:hover {
 @media (max-width: 768px) {
 	.form {
 		margin: 0 5%;
-		padding: 10% 0;
+		padding: 10% 5%;
 	}
 	button {
 		width: 5em;

@@ -48,4 +48,10 @@ let isButtonValid = () => {
 window.onload = isButtonValid
 
 
+button.addEventListener("click", () => {
+	document.querySelector(".form").innerHTML = 
+	"<h1>Successfully Registered</h1><button>Go To Login</button>"
+})
+
+
 //TODO: pw için regex yaz.
