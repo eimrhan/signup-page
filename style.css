@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+	font-family: 'Comfortaa', cursive;
+	background-image: url(https://images.pexels.com/photos/3473569/pexels-photo-3473569.jpeg?fm=jpg&w=1920&h=1280);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/* background-position: center; */
+	color: #ccc;
+	align-items: center;
+}
+
+h1 {
+	display: flex;
+	width: fit-content;
+	font-size: 3rem;
+	margin: 5rem auto;
+	color: #cccc;
+	background-color: rgba(95, 158, 160, 0.1);
+	border-radius: 10rem;
+	padding: 1rem;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	border: 3px solid #cccc;
+	border-radius: 1em;
+	align-items: center;
+	padding: 5rem;
+	margin: 0 20%;
+	backdrop-filter: blur(10px);
+	background: rgba(0, 0, 0, 0.2);
+}
+input {
+	background-color: #3336;
+	color: #ccc;
+	width: 50vw;
+	max-width: 800px;
+	font-size: 2em;
+	border-radius: 1rem;
+	padding: .4em;
+}
+label {
+	font-size: 2em;
+	margin-top: 2rem;
+	margin-bottom: .5rem;
+	display: block;
+}
+button {
+	width: 10em;
+	margin-top: 5rem;
+	font-size: 2.5rem;
+	border-radius: 1em;
+	padding: .5rem;
+}
+button.active {
+	background-color: cadetblue;
+	transition: all .5s ease;
+}
+button.active:hover {
+	background-color: aquamarine;
+	transform: scale(1.1);
+}
+
+.invalid {
+	border: 1px solid firebrick;
+	outline: none;
+}
+.invalid-text {
+	display: none;
+	font-size: 1em;
+	color: firebrick;
+}
+
+@media (max-width: 768px) {
+	.form {
+		margin: 0 5%;
+		padding: 10% 0;
+	}
+	button {
+		width: 5em;
+		font-size: 2em;
+	}
+	input {
+		width: 70vw;
+		padding: .2em;
+		font-size: 1.5em;
+	}
+	label {
+		font-size: 1.5em;
+	}
+}
